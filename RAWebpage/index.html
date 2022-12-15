@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RenAguilos</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .introduction {
+        display: flex;
+        height: 90vh;
+        overflow: hidden;
+        /* border: 1px solid yellow; */
+        justify-content: space-between;
+      }
+      .description {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #ccc;
+        /* border: 1px solid red; */
+        width: 100%;
+        margin-left: 5em;
+        gap: 1.5vw;
+        min-width: 50%;
+      }
+      .description h1 {
+        color: rgb(12, 13, 13);
+        font-size: 3vw;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        text-align: center;
+      }
+      .description h2,
+      p {
+        font-family: fantasy;
+        color: rgb(63, 37, 37);
+        text-align: center;
+        font-size: 1.2vw;
+      }
+
+      .avatar-container {
+        /* border: 1px solid white; */
+        overflow: hidden;
+        display: flex;
+      }
+      .avatar {
+        height: 100%;
+        margin-left: auto;
+        transition: 0.5s all ease-in-out;
+        min-height: 25vh;
+      }
+      .avatar:hover {
+        transform: scale(1.15) translateY(50px);
+        
+      }
+    </style>
+  </head>
+  
+  <body>
+   
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a href="./index.html">
+          <img class="logo" src="./assests/logo.png" alt="logo" />
+        </a>
+      </div>
+      <ul class="navbar-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About Me</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./contact.html">My Contacts</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="introduction">
+        <div class="description">
+          <h2>Hi, I'm</h2>
+          <h1>Reynard Aguilos</h1>
+          <p>I'm an Information Technology student.</p>
+        </div>
+        <div class="avatar-container">
+          <img
+            class="avatar"
+            src="./assests/GradPic.png"
+            alt="Graduation Picture"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

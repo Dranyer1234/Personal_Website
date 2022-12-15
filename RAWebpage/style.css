@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+.navbar {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+}
+.navbar-brand .logo {
+  padding: 0.5em 2em;
+  height: 50px;
+  width: 100px;
+}
+.navbar-links {
+  display: flex;
+  gap: 2em;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 10%;
+}
+.navbar-links li {
+  list-style: none;
+}
+.navbar-links li a {
+  text-decoration: none;
+  color: #ccc;
+}
+.navbar-links a:hover {
+  color: goldenrod;
+}
